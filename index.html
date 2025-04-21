@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crop P2P Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Krishify P2P - Crop Marketplace</h1>
+    <nav>
+      <button onclick="loadAds('buy')">Buy Crops</button>
+      <button onclick="loadAds('sell')">Sell Crops</button>
+    </nav>
+  </header>
+
+  <section id="adsContainer"></section>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDetails"></p>
+      <button id="placeOrderBtn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
