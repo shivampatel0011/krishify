@@ -3,7 +3,7 @@ let ads = [];
 let selectedAd = null;
 
 async function loadAds(type) {
-  const res = await fetch(`http://localhost:3000/ads?type=${type}`);
+  const res = await fetch(`http://krishify1-3.onrender.com/ads?type=${type}`);
   ads = await res.json();
   const container = document.getElementById('adsContainer');
   container.innerHTML = '';
